@@ -1,0 +1,23 @@
+# gpu0
+Sources: lspci-gpu0.log, nvidia-smi-q.log, nvidia-smi-csv.log
+
+- **PASS** PCIe Width: x16 vs cap x16 (`logs/lspci-gpu0.log:102`)
+- **PASS** PCIe Speed: 32GT/s (`logs/lspci-gpu0.log:102`)
+- **INFO** Product Name: NVIDIA GeForce RTX 5090 (`logs/nvidia-smi-q.log:12`)
+- **INFO** VBIOS Version: 98.02.2E.00.AF (`logs/nvidia-smi-q.log:32`)
+- **INFO** Bus Id: 00000000:11:00.0 (`logs/nvidia-smi-q.log:73`)
+- **INFO** DRAM Uncorrectable: N/A (consumer card, not reported) (`logs/nvidia-smi-q.log:154`)
+- **INFO** SRAM Uncorrectable SEC-DED: N/A (consumer card, not reported) (`logs/nvidia-smi-q.log:152`)
+- **INFO** Remapped Rows: N/A (consumer card, not reported) (`logs/nvidia-smi-q.log:175`)
+- **INFO** Double Bit ECC: N/A (consumer card, not reported) (`logs/nvidia-smi-q.log:173`)
+- **PASS** Channel Repair Pending: No (`logs/nvidia-smi-q.log:168`)
+- **PASS** TPC Repair Pending: No (`logs/nvidia-smi-q.log:169`)
+- **PASS** HW Slowdown: Not Active (`logs/nvidia-smi-q.log:100`)
+- **PASS** HW Thermal Slowdown: Not Active (`logs/nvidia-smi-q.log:101`)
+- **PASS** HW Power Brake Slowdown: Not Active (`logs/nvidia-smi-q.log:102`)
+- **PASS** SW Thermal Slowdown: Not Active (`logs/nvidia-smi-q.log:104`)
+- **INFO** GPU Current Temp: 48 C (`logs/nvidia-smi-q.log:177`)
+- **PASS** PCIe width current 16 vs max 16 (`logs/nvidia-smi-csv.log:4`)
+- **PASS** PCIe gen 5 (`logs/nvidia-smi-csv.log:4`)
+- **PASS** temperature.gpu: 48 C (`logs/nvidia-smi-csv.log:4`)
+- Load evidence (not copied): [bench results](${BENCH_DIR}/results)
